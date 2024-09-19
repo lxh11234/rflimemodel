@@ -1,3 +1,10 @@
+import streamlit as st
+import joblib
+import numpy as np
+import pandas as pd
+import shap
+import matplotlib.pyplot as plt
+from lime.lime_tabular import LimeTabularExplainer
 # Load the new model
 model = joblib.load('RF.pkl')
 # Load the test data from X_test.csv to create LIME explainer
